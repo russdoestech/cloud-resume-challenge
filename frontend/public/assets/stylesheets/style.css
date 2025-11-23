@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(87, 190, 237)
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(214,62,62);
+    flex-shrink: 1;
+
+}
+
+article {
+    width: 1000px;
+    background: rgb(255,255,255);
+    flex-grow: 1;
+    overflow: auto;
+}
+
+
+
