@@ -82,3 +82,4 @@ html, body {
     background: rgb(87, 190, 237)
 }
  
+Downloaded a background image, making sure the dimensions weren't too large. Then ran the image through an optimizer to reduce the file size, and finally converted it to webp which further reduced the size.
