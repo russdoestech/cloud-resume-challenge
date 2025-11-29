@@ -90,7 +90,6 @@ article {
 
 body[location="resume"] section.header {
     text-align: center;
-    border-bottom: solid 2px rgb(0,0,0);
     padding-bottom: 8px;
 }
 
@@ -125,6 +124,10 @@ body[location="resume"] .item_heading .details {
 
 body[location="resume"] .item_heading .details {
     text-align: right;
+}
+
+body[location="resume"] .item_heading .details .duration {
+    font-style: italic;
 }
 
 body[location="resume"] .description {
