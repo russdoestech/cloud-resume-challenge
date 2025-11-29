@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Header from 'components/Header'
-import ResumePage from 'pages/ResumePage'
+import { Outlet, NavLink } from 'react-router'
 
-function App() {
+export default function Layout() {
   const [count, setCount] = useState(0)
 
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="content_wrap">
         <div className="content">
           <article>
-            <ResumePage></ResumePage>
+            <Outlet></Outlet>
           </article>
         </div>
       </div>
@@ -19,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+

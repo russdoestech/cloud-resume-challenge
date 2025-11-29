@@ -2,13 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route} from 'react-router';
 import 'css/style.css'
-import App from './App.jsx'
+import Layout from './Layout.jsx'
+import ResumePage from 'pages/ResumePage';
 
 createRoot(document.querySelector('main')).render(
   <BrowserRouter>
-    <App />
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<ResumePage />} />
+      </Route>
     </Routes>
   </BrowserRouter>,
 )
