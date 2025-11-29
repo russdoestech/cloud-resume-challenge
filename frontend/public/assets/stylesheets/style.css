@@ -9,10 +9,14 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background: #7C96C6 url('/assets/images/blue_paper_comp.webp');
+    background: #7C96C6 url('/assets/images/grey_pattern_2000x2000.jpg');
 }
 
 h1,h2,h3,h4,h5 {
+    margin: 0px;
+}
+
+p {
     margin: 0px;
 }
 
@@ -43,6 +47,19 @@ header nav a {
     padding: 24px;
     color: rgb(255,255,255);
 }
+
+header nav a.active {
+    background: rgb(255,255,255,0.2);
+}
+
+ul {
+    margin: 0px;
+    padding: 12px 12px 12px 24px;
+}
+
+li {
+    padding: 2px 0px
+}
 div.content_wrap {
     
     padding: 32px;
@@ -63,4 +80,55 @@ article {
     background: rgb(255,255,255);
     box-shadow: 5px 0px 6px 1px rgba(0, 0, 0, 0.5);
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
+body[location="resume"] section.header {
+    text-align: center;
+    border-bottom: solid 2px rgb(0,0,0);
+    padding-bottom: 8px;
+}
+
+body[location="resume"] section h2 {
+    border-bottom: solid 1px rgb(0,0,0);
+    padding: 8px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+body[location="resume"] section h3 {
+    font-size: 16px;
+}
+
+body[location="resume"] .item {
+    padding: 8px 0px;
+}
+
+body[location="resume"] .item_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+body[location="resume"] .item_heading .info,
+body[location="resume"] .item_heading .details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+body[location="resume"] .item_heading .details {
+    text-align: right;
+}
+
+body[location="resume"] .description {
+    margin-top: 8px;
+}
+
+

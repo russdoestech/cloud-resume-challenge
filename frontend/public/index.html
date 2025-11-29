@@ -6,11 +6,13 @@
     <title>Russ Ryness' Cloud Resume</title>
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
   </head>
-  <body>
+  <body location="resume">
     <main>
       <header>
         <nav>
           <a href="/">Home</a>
+          <a class="active" href="/resume.html">Resume</a>
+          <a href="/projects.html">Projects</a>
         </nav>
       </header>
       <div class="content_wrap">
@@ -19,11 +21,11 @@
             <section class="header">
               <h1>Russ Ryness</h1>
               <p>
-                Aliso Viejo, CA
-                &bull;
                 <a href="mailto:russ.ryness@gmail.com">russ.ryness@gmail.com</a>
                 &bull;
                 +1 949-123-1234
+                &bull;
+                <a href="https://linkedin.com/in/russ-ryness">LinkedIn</a>
               </p>
             </section><!-- header -->
             <section class="summary">
@@ -33,13 +35,16 @@
               <h2>Experience</h2>
               <div class="items">
                 <div class="item">
-                  <div class="info">
-                    <h3>IT Consultant</h3>
-                    <p>RG Consulting, Aliso Viejo, CA</p>
-                  </div><!-- info -->
-                  <div class="details">
-                    <div class="duration">Feb 2023 - present</div>
-                  </div><!-- details -->
+                  <div class="item_heading">
+                    <div class="info">
+                      <h3>IT Consultant</h3>
+                      <p>RG Consulting</p>
+                    </div><!-- info -->
+                    <div class="details">
+                      <div class="duration">Feb 2023 - present</div>
+                      <div class="location">Aliso Viejo, CA</div>
+                    </div><!-- details -->
+                  </div><!-- item_heading -->
                   <ul>
                     <li>Created and implemented an e-Commerce MVP (Minimum Viable Product) on AWS by employing automation using Terraform and Ansible (Infrastructure as Code).</li>
                     <li>Configured AWS Systems Manager to automate installation of security agents, and Simple Notification Service (SNS) to notify administrators of installation status.</li>
@@ -50,14 +55,17 @@
                   </ul>
                 </div><!-- item -->
                 <div class="item">
-                  <div class="info">
-                    <h3>Infrastructure Services Manager</h3>
-                    <p>Covenant Care, Aliso Viejo, CA</p>
-                    <p>Covenant Care provides skilled nursing, physical therapy, and home health services throughout California and Nevada.</p>
-                  </div><!-- info -->
-                  <div class="details">
-                    <div class="duration">Jul 2015 - Jan 2023</div>
-                  </div><!-- details -->
+                  <div class="item_heading">
+                    <div class="info">
+                      <h3>Infrastructure Services Manager</h3>
+                      <p>Covenant Care</p>
+                    </div><!-- info -->
+                    <div class="details">
+                      <div class="duration">Jul 2015 - Jan 2023</div>
+                      <div class="location">Aliso Viejo, CA</div>
+                    </div><!-- details -->
+                  </div><!-- item_heading -->
+                  <div class="description">Covenant Care provides skilled nursing, physical therapy, and home health services throughout California and Nevada.</div>
                   <ul>
                     <li>Directed daily operations of a 5-person team, monitored KPIs and SLAs using Remedy IT Service Management tool and ensured services were delivered in accordance with company requirements.</li>
                     <li>Administered Data Centers in Irvine, CA and Las Vegas, NV; managed 100+ Windows & Linux server VMware virtual machines and utilized Veeam Backup with a GFS backup strategy for data retention and disaster recovery.</li>
@@ -70,14 +78,17 @@
                   </ul>
                 </div><!-- item -->
                 <div class="item">
+                  <div class="item_heading">
                   <div class="info">
                     <h3>IT Manager</h3>
-                    <p>Kevcomp Engineering, Carson, CA</p>
-                    <p>The Carson refinery Quality Assurance lab provides extensive testing for a range of petroleum fuels and products</p>
+                    <p>Kevcomp Engineering</p>
                   </div><!-- info -->
                   <div class="details">
                     <div class="duration">Jul 2015 - Jan 2023</div>
+                    <div class="location">Carson, CA</div>
                   </div><!-- details -->
+                  </div><!-- item_heading -->
+                  <div class="description">The Carson refinery Quality Assurance lab provides extensive testing for a range of petroleum fuels and products</div>
                   <ul>
                     <li>Planned and managed the annual IT budget ($200K) for BP/Tesoro’s Carson Refinery Quality Assurance Lab.</li>
                     <li>Strengthened the information security posture of Tesoro; designed and implemented information security capabilities for a remote access solution (VPN) into Tesoro networks.</li>
@@ -92,24 +103,28 @@
               <h2>Education</h2>
               <div class="items">
                 <div class="item">
-                  <div class="info">
-                    <h3>The Cloud Bootcamp</h3>
-                    <p>1-year Intensive Cloud & DevOps bootcamp</p>
-                  </div><!-- info -->
-                  <div class="details">
-                    <div class="location">Miami, FL</div>
-                    <div class="duration">2023-2024</div>
-                  </div><!-- details -->
+                  <div class="item_heading">
+                    <div class="info">
+                      <h3>The Cloud Bootcamp</h3>
+                      <p>1-year Intensive Cloud & DevOps bootcamp</p>
+                    </div><!-- info -->
+                    <div class="details">
+                      <div class="location">Miami, FL</div>
+                      <div class="duration">2023-2024</div>
+                    </div><!-- details -->
+                  </div><!-- item_heading -->
                 </div><!-- item -->
                 <div class="item">
-                  <div class="info">
-                    <h3>MTI College</h3>
-                    <p>2-year AAS Degree: Microsoft Systems Engineer</p>
-                  </div><!-- info -->
-                  <div class="details">
-                    <div class="location">Sacramento, CA</div>
-                    <div class="duration">2000 - 2001</div>
-                  </div><!-- details -->
+                  <div class="item_heading">
+                    <div class="info">
+                      <h3>MTI College</h3>
+                      <p>2-year AAS Degree: Microsoft Systems Engineer</p>
+                    </div><!-- info -->
+                    <div class="details">
+                      <div class="location">Sacramento, CA</div>
+                      <div class="duration">2000 - 2001</div>
+                    </div><!-- details -->
+                  </div><!-- item_heading -->
                 </div><!-- item -->
               </div><!-- items -->
             </section>
