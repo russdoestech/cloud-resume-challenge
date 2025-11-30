@@ -1,9 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from 'components/Header'
-import { Outlet, NavLink } from 'react-router'
+import { Outlet, NavLink, useLocation } from 'react-router'
+import 'css/default.css'
 
 export default function Layout() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+
+  useEffect(() => {
+    // derive a simple name for the page
+    const page =
+      location.pathname === "/" ? "home" : location.pathname.replace("/", "");
+
+    // set it on the body tag
+    document.body.setAttribute("location", page);
+
+    // optional cleanup
+    return () => {
+      document.body.removeAttribute("location");
+    };
+  }, [location]);
 
   return (
     <>
