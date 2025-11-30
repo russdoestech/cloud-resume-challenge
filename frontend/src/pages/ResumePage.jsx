@@ -7,7 +7,7 @@ import resumeData from 'data/resumeData.js';
 export default function ResumePage() {
   return (
     <>
-      <ResumeHeader>Russ Ryness</ResumeHeader>
+      <ResumeHeader person={resumeData.person}></ResumeHeader>
             <section className="summary">
               <h2>Summary</h2>
             </section>

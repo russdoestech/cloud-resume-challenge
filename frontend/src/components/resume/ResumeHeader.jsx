@@ -1,18 +1,19 @@
 import React from "react";
+import resumeData from "data/resumeData";
 
 
 export default function ResumeHeader() {
-  
+  const { name, email, phone, linkedin } = resumeData.person;
   
   return (
     <section className="header">
-        <h1>Russ Rynes</h1>
+        <h1>{name}</h1>
         <p>
-        <a href="mailto:russ.ryness@gmail.com">russ.ryness@gmail.com</a>
+        <a href="mailto:{email}">{email}</a>
         &bull;
-        +1 949-123-1234
+        {phone}
         &bull;
-        <a href="https://linkedin.com/in/russ-ryness">LinkedIn</a>
+        <a href={linkedin}>LinkedIn</a>
         </p>
       </section>
   );
