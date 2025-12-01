@@ -3,6 +3,13 @@ body[location="resume"] section.header {
     padding-bottom: 8px;
 }
 
+body[location="resume"] section.header p {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+}
+
 body[location="resume"] section h2 {
     border-bottom: solid 1px rgb(0,0,0);
     padding: 8px 0px;

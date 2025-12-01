@@ -9,11 +9,11 @@ export default function ResumeHeader() {
     <section className="header">
         <h1>{name}</h1>
         <p>
-        <a href="mailto:{email}">{email}</a>
-        &bull;
-        {phone}
-        &bull;
-        <a href={linkedin}>LinkedIn</a>
+        <span className="email"><a href={`mailto:${email}`}>{email}</a></span>
+        <span className="bull">&bull;</span>
+        <span className="phone">{phone}</span>
+        <span className="bull">&bull;</span>
+        <span className="linkedin"><a href={linkedin}>LinkedIn</a></span>
         </p>
       </section>
   );

@@ -89,3 +89,18 @@ Downloaded a background image, making sure the dimensions weren't too large. The
 - I chose to use React because it is the most popular JS framework.
 - I chose to use Vite.js because my frontend will be simple.
 - Configured React Router v7,e and used declarative mode.
+
+## Destructuring Considerations
+
+I decided to use Destructing rather than standard JavaScript object dot-notation, as I felt it fit the layout of the resumeData.js file more cleanly, and resulted in more minimal-looking references within the body of the various React files.
+
+## Troubleshooting
+
+I was having some issues getting the references to data within 'resumeData.js' working, which was breaking the resume page and preventing it from rendering. I utilized ChatGPT to verify the correct syntax of my JS destructuring, and corrected my import reference for resumeData, resolved the issues, and got the resume page to render correctly. (again)
+
+I was also having an issue with the email href, where when selected, it was opening a new email in the associated email app, but was not populating the mailto address. When hovering over the link, it showing 'mailto:{email} rather than the actual email address. I again utilized ChatGPT for advice on correcting my syntax. I used the suggested 'template literals' syntax shown below, which resolved the problem.
+
+```
+<a href={`mailto:${email}`}>{email}</a> 
+```
+
