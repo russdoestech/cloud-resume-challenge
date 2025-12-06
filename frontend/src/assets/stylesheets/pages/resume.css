@@ -51,4 +51,19 @@ body[location="resume"] .description {
     margin-top: 8px;
 }
 
+/* Ensure resume content expands naturally */
+#resume-print-area {
+    width: 100%;
+    max-width: 1000px;      /* Looks cleaner on desktop */
+    margin: 0 auto;
+    padding: 20px 24px;
+}
 
+/* ============================================================
+   MISCELLANEOUS
+   ============================================================ */
+
+/* Links in resume shouldn't look like web links */
+body[location="resume"] a {
+    text-decoration: none;
+}

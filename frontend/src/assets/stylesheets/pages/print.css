@@ -1,0 +1,98 @@
+/* src/styles/print.css */
+
+
+@media print {
+
+  /* Section headers stick with first line of content */
+  section h2 {
+    page-break-after: avoid;
+  }
+
+  /* Job headings stay together */
+  .item_heading {
+    page-break-inside: avoid;
+  }
+
+  /* But allow items (especially bullets) to break naturally */
+  .item {
+    page-break-inside: auto !important;
+  }
+
+  /* Prevent long bullet lists from triggering full-page whitespace */
+  ul, li {
+    page-break-inside: auto !important;
+  }
+
+  /* Remove browser & layout scrolling */
+  * {
+    overflow: visible !important;
+  }
+
+  html, body, #root {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Only show the resume area */
+  body * {
+    visibility: hidden !important;
+  }
+
+  #resume-print-area,
+  #resume-print-area * {
+    visibility: visible !important;
+  }
+
+  #resume-print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+
+/* ============================
+     PAGE SETTINGS
+     ============================ */
+  @page {
+    size: auto;
+    margin: 10mm;   /* Good professional print margin */
+  }
+
+  body {
+    margin: 0;
+    background: white !important;
+  }
+
+
+
+  /* ============================
+     HIDE NON-RESUME ELEMENTS
+     ============================ */
+  nav,
+  header,
+  footer,
+  .navbar,
+  .sidebar,
+  .menu,
+  button,
+  .print-button,
+  .sticky,
+  .scroll-container {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Hide hyperlinks */
+  a[href]:after {
+    content: "" !important;
+  }
+
+  /* ============================
+     TEXT PRINT QUALITY
+     ============================ */
+  body, section, div, p, span, h1, h2, h3, li {
+    color: #000 !important;
+  }
+}
